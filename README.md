@@ -18,16 +18,17 @@
   Contributions are welcome! Please see the <a href="#contributing">Contributing</a> section for details.
 </p>
 
-> Tired of Postman? Want a decent postman alternative that doesn't suck?
+> Building AI apps with Claude Code, Codex, or your favorite API client?
 >
-> [Apidog](https://bit.ly/4iJHYy8) is a powerful all-in-one API development platform that's revolutionizing how developers design, test, and document their APIs.
->
-> Unlike traditional tools like Postman, Apidog seamlessly integrates API design, automated testing, mock servers, and documentation into a single cohesive workflow. With its intuitive interface, collaborative features, and comprehensive toolset, Apidog eliminates the need to juggle multiple applications during your API development process.
->
-> Whether you're a solo developer or part of a large team, Apidog streamlines your workflow, increases productivity, and ensures consistent API quality across your projects.
+> Try **[Blackmagic AI](https://blackmagic.engineering/?utm_source=github&utm_medium=awesome-list&utm_campaign=postman-alternatives&utm_content=cta-text)**, an OpenAI-compatible gateway and cheaper OpenRouter alternative. Use one API key, prepaid credits, and top models while cutting AI model costs by up to 50%.
 
+</br>
 
-[![image/png](https://cdn-uploads.huggingface.co/production/uploads/67c32d41e1a815f578300dc2/TTgwrvdpuuE6ArDctCqzJ.png)](https://bit.ly/4iJHYy8)
+[<img width="1490" height="915" alt="Blackmagic AI OpenAI-compatible gateway dashboard" src="https://github.com/user-attachments/assets/af41beba-3fe0-4409-bfd6-03c6617a6ab1" />](https://blackmagic.engineering/?utm_source=github&utm_medium=awesome-list&utm_campaign=postman-alternatives&utm_content=cta-image)
+
+</br>
+
+> **[Compare model pricing](https://blackmagic.engineering/models?utm_source=github&utm_medium=awesome-list&utm_campaign=postman-alternatives&utm_content=cta-pricing)**
 
 
 ---
