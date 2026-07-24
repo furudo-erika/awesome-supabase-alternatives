@@ -41,6 +41,7 @@
     *   [Firebase](#firebase)
     *   [AWS Amplify](#aws-amplify)
     *   [Nhost](#nhost)
+    *   [Cohesivity](#cohesivity)
     *   [Azure App Service / Mobile Apps](#azure-app-service--mobile-apps)
     *   [MongoDB Atlas App Services](#mongodb-atlas-app-services)
 *   [Self-Hosted / Open Source BaaS Platforms](#self-hosted--open-source-baas-platforms)
@@ -170,6 +171,27 @@ These platforms offer a managed, cloud-based experience, abstracting away infras
     *   Relies heavily on Hasura; less direct SQL access emphasis compared to Supabase's PostgREST integration (though SQL is accessible).
     *   Feature set might be slightly less extensive than Supabase or Firebase in some niche areas (though core BaaS features are covered).
 *   **Pricing Model:** Free tier, Pro plan (usage-based), Enterprise plan.
+
+### [Cohesivity](https://cohesivity.ai/)
+
+*   **Description:** Headless backend and services purpose built for AI agents. Cohesivity gives coding agents one managed API for provisioning and operating application infrastructure without requiring separate provider accounts or consoles.
+*   **Key Features:**
+    *   **Databases:** Managed Cloudflare D1/SQLite and PostgreSQL databases exposed through an HTTP API.
+    *   **Authentication:** Google social login with user and token management.
+    *   **Hosting & Compute:** Managed application hosting and Cloudflare Workers.
+    *   **Storage & Realtime:** Object storage, vector storage, WebSocket channels, presence, and message history.
+    *   **Agent Services:** Email inboxes, inference APIs, AI gateway, browser automation, search, speech, weather, and geocoding.
+    *   **Agentic Signup:** `npx @cohesivity/init` lets an AI coding agent create and start using an ephemeral project without stopping for signup or credentials. It returns a claim link so a human can approve and take ownership of the project.
+*   **Pros:**
+    *   One API and management plane across backend infrastructure and third-party services.
+    *   Provider credentials remain server-side instead of being exposed to the agent or application.
+    *   Agent-readable documentation and per-service instructions are built into the platform.
+    *   The claimed free tier includes ten projects and 5 USD per month in credits.
+*   **Cons:**
+    *   Managed service only; there is no self-hosted deployment option.
+    *   Best suited to agent-driven development workflows rather than manual infrastructure management.
+    *   Its unified API provides less provider-specific control than managing each service directly.
+*   **Pricing Model:** Claimed Free plan at $0/month, Plus at $20/month, and Pro at $100/month, with monthly infrastructure limits and credits.
 
 ### [Azure App Service / Mobile Apps](https://azure.microsoft.com/en-us/products/app-service/mobile/)
 
