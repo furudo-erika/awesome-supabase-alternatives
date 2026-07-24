@@ -181,7 +181,7 @@ These platforms offer a managed, cloud-based experience, abstracting away infras
     *   **Hosting & Compute:** Managed application hosting and Cloudflare Workers.
     *   **Storage & Realtime:** Object storage, vector storage, WebSocket channels, presence, and message history.
     *   **Agent Services:** Email inboxes, inference APIs, AI gateway, browser automation, search, speech, weather, and geocoding.
-    *   **Agentic Setup:** `npx @cohesivity/init` creates an ephemeral project without signup; keeping it uses a human-approved claim flow.
+    *   **Agentic Signup:** `npx @cohesivity/init` lets an AI coding agent create and start using an ephemeral project without stopping for signup or credentials. It returns a claim link so a human can approve and take ownership of the project.
 *   **Pros:**
     *   One API and management plane across backend infrastructure and third-party services.
     *   Provider credentials remain server-side instead of being exposed to the agent or application.
@@ -189,8 +189,8 @@ These platforms offer a managed, cloud-based experience, abstracting away infras
     *   The claimed free tier includes ten projects and 5 USD per month in credits.
 *   **Cons:**
     *   Managed service only; there is no self-hosted deployment option.
-    *   Launch-stage platform with a smaller ecosystem than established BaaS providers.
-    *   Availability and behavior of individual services can depend on upstream providers.
+    *   Best suited to agent-driven development workflows rather than manual infrastructure management.
+    *   Its unified API provides less provider-specific control than managing each service directly.
 *   **Pricing Model:** Claimed Free plan at $0/month, Plus at $20/month, and Pro at $100/month, with monthly infrastructure limits and credits.
 
 ### [Azure App Service / Mobile Apps](https://azure.microsoft.com/en-us/products/app-service/mobile/)
