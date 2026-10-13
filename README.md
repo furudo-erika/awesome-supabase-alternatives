@@ -43,6 +43,7 @@
     *   [Nhost](#nhost)
     *   [Azure App Service / Mobile Apps](#azure-app-service--mobile-apps)
     *   [MongoDB Atlas App Services](#mongodb-atlas-app-services)
+    *   [Scribase](#scribase)
 *   [Self-Hosted / Open Source BaaS Platforms](#self-hosted--open-source-baas-platforms)
     *   [Appwrite](#appwrite)
     *   [PocketBase](#pocketbase)
@@ -217,6 +218,24 @@ These platforms offer a managed, cloud-based experience, abstracting away infras
     *   Function runtimes might be more limited compared to AWS Lambda or Google Cloud Functions.
     *   May be less intuitive for developers primarily experienced with relational databases and SQL.
 *   **Pricing Model:** Free tier, Usage-based pricing for App Services (requests, compute time, sync usage) on top of MongoDB Atlas cluster costs.
+
+### [Scribase](https://scribase.com/)
+
+*   **Description:** A hosted, Supabase-compatible platform: the same Postgres, Auth, Storage, Realtime and Functions APIs, plus Neon-style database branching and a flat per-project price. Idle projects scale to zero instead of being paused.
+*   **Key Features:**
+    *   **Database:** Managed PostgreSQL per project with copy-on-write branching.
+    *   **Supabase compatibility:** Works with the Supabase client libraries (Auth, Storage, Realtime, Functions).
+    *   **Agent tooling:** Hosted MCP server (`https://api.scribase.com/mcp`) and `npx scribase init --temp --yes` for a free 72-hour project, no account needed.
+    *   **Email:** Resend-compatible mail API.
+    *   **Backups:** Daily backups kept 14 days, one-command export.
+*   **Pros:**
+    *   Flat $25 per project per month, no project limit.
+    *   Idle projects scale to zero rather than pausing, so low-traffic apps stay reachable.
+    *   Migration from Supabase keeps the same client code.
+*   **Cons:**
+    *   Newer and smaller than Supabase; smaller community.
+    *   Cloud-only; no self-hosted edition.
+*   **Pricing Model:** $25 per project per month; free 72-hour trial projects.
 
 ---
 
