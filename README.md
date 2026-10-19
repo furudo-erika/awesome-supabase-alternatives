@@ -41,6 +41,7 @@
     *   [Firebase](#firebase)
     *   [AWS Amplify](#aws-amplify)
     *   [Nhost](#nhost)
+    *   [Scribase](#scribase)
     *   [Azure App Service / Mobile Apps](#azure-app-service--mobile-apps)
     *   [MongoDB Atlas App Services](#mongodb-atlas-app-services)
 *   [Self-Hosted / Open Source BaaS Platforms](#self-hosted--open-source-baas-platforms)
@@ -170,6 +171,25 @@ These platforms offer a managed, cloud-based experience, abstracting away infras
     *   Relies heavily on Hasura; less direct SQL access emphasis compared to Supabase's PostgREST integration (though SQL is accessible).
     *   Feature set might be slightly less extensive than Supabase or Firebase in some niche areas (though core BaaS features are covered).
 *   **Pricing Model:** Free tier, Pro plan (usage-based), Enterprise plan.
+
+### [Scribase](https://scribase.com/)
+
+*   **Description:** A hosted, Supabase-compatible backend aimed at developers and coding agents provisioning projects programmatically. It implements the same wire protocol as Supabase, so existing `supabase-js` code runs unchanged while adding copy-on-write database branching and flat, predictable pricing.
+*   **Key Features:**
+    *   **Database:** Managed PostgreSQL with copy-on-write branching (via a Neon-backed provider) for per-task or per-PR preview databases.
+    *   **Authentication:** Supabase-compatible Auth.
+    *   **API:** supabase-js works unchanged against Scribase's endpoints.
+    *   **Storage & Realtime:** S3-backed Storage and Realtime, matching Supabase's surface.
+    *   **Agent tooling:** An MCP server and CLI (`npx scribase init`) for coding agents to provision and manage projects directly, with write confirmations and an RLS isolation check before schema changes apply.
+*   **Pros:**
+    *   Drop-in `supabase-js` compatibility — minimal migration effort for existing Supabase projects.
+    *   Flat per-project pricing instead of metered usage billing.
+    *   Copy-on-write branching makes short-lived preview/agent databases cheap to create and discard.
+    *   One-click project export avoids vendor lock-in.
+*   **Cons:**
+    *   Newer platform with a smaller track record than Supabase or Firebase.
+    *   Agent-first feature set (MCP server, CLI provisioning) is most valuable for agent-driven workflows; less differentiated for traditional manual development.
+*   **Pricing Model:** Flat $25/project.
 
 ### [Azure App Service / Mobile Apps](https://azure.microsoft.com/en-us/products/app-service/mobile/)
 
